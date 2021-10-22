@@ -46,3 +46,18 @@ def Menu () :
                 else : print("Nim Tidak Ditemukan")
                         input("Kembali Ke Menu Utama")
                         Menu()
+                 elif pilih == 4 :
+                        os.system('clear')
+                        index_delete=-1
+                        tampil()
+                        id_hapus = int("input("Input Nim yang di hapus :"))
+                        for a in range(O,len(dataSiswa)):
+                        if id_hapus == dataSiswa[a].nim:
+                                       index_update = a
+                                       break
+                        if(index_delete > -1):
+                            del dataSiswa[index-delete]
+                                       print("Data Telah Di Hapus")
+                         else : print ("Data Telah Di Hapus ")
+                         input("Kembali Menu Utama")
+                                       
