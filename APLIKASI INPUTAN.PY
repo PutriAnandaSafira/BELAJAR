@@ -57,7 +57,7 @@ def Menu () :
                                        break
                         if(index_delete > -1):
                             del dataSiswa[index-delete]
-                                       print("Data Telah Di Hapus")
+                            print("Data Telah Di Hapus")
                          else : print ("Data Telah Di Hapus ")
                          input("Kembali Menu Utama")
                                        
