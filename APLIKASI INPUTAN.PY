@@ -36,3 +36,13 @@ def Menu () :
                 for a in range (O, len(dataSiswa)):
                         index_update = a
                         break
+          if(index_update > -1):
+                print("INPUT DATA SISWA YANG AKAN DI UPDATE ")
+                siswa = Mahasiswa()
+                siswa.nim = (int(input("Masukkan Nim : ")))
+                siswa.nama + (input("Masukkan Nama Siswa: "))
+                dataSiswa[index_update] = siswa
+                print("Berhasil Update Data Siswa")
+                else : print("Nim Tidak Ditemukan")
+                        input("Kembali Ke Menu Utama")
+                        Menu()
