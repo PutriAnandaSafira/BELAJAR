@@ -60,4 +60,9 @@ def Menu () :
                             print("Data Telah Di Hapus")
                          else : print ("Data Telah Di Hapus ")
                          input("Kembali Menu Utama")
+                         Menu()
+                   elif pilih == 5 :
+                        Author()
+                        input("\n\n Kembali Ke Menu Utama")
+                         
                                        
