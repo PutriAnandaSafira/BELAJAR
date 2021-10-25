@@ -46,7 +46,7 @@ def Menu () :
                 else : print("Nim Tidak Ditemukan")
                         input("Kembali Ke Menu Utama")
                         Menu()
-                 elif pilih == 4 :
+           elif pilih == 4 :
                         os.system('clear')
                         index_delete=-1
                         tampil()
