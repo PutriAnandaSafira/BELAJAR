@@ -1,68 +1,46 @@
-#APLIKASI INPUTAN DATA MAHASISWA
-
+ # Aplikasi Inputan data siswa
+        
+       
 import os
 import sys
 
-class mahasiswa:
-        nama=""
-        nim=""
+class Mahasiswa:
+        nim=''
+        nama=''
+        
 pilih = 0
 dataSiswa = []
 
-def Menu () :
-        os.system ('cls')
-        print("Menu Aplikasi Data Siswa")
-        print("-------------------------------------------")
-        print("1.Input Data Siswa")
-        print("2. Tampilkan Data Siswa")
-        print("3. Update Data Siswa")
-        print("4. Hapus Data Siswa")
-        print("5. Author")
-        print("6. Keluar Aplikasi")
-        pilih = int(input("Masukkan Pilihan Anda :"))
-        if pilih == 1 :
-                pilih1()
-                Menu()
-                
-            elif pilih == 2:
-                tampil()
-                input("Kembali Ke Menu Utama")
-                Menu()
-                
-            elif pilih == 3:
-                index_update=-1
-                tampil()
-                id_edit = int(input("Input Nim Yang Akan Di Update"))
-                for a in range (O, len(dataSiswa)):
-                        index_update = a
-                        break
-          if(index_update > -1):
-                print("INPUT DATA SISWA YANG AKAN DI UPDATE ")
-                siswa = Mahasiswa()
-                siswa.nim = (int(input("Masukkan Nim : ")))
-                siswa.nama + (input("Masukkan Nama Siswa: "))
-                dataSiswa[index_update] = siswa
-                print("Berhasil Update Data Siswa")
-                else : print("Nim Tidak Ditemukan")
-                        input("Kembali Ke Menu Utama")
-                        Menu()
-                 elif pilih == 4 :
-                        os.system('clear')
-                        index_delete=-1
-                        tampil()
-                        id_hapus = int("input("Input Nim yang di hapus :"))
-                        for a in range(O,len(dataSiswa)):
-                        if id_hapus == dataSiswa[a].nim:
-                                       index_update = a
-                                       break
-                        if(index_delete > -1):
-                            del dataSiswa[index-delete]
-                            print("Data Telah Di Hapus")
-                         else : print ("Data Telah Di Hapus ")
-                         input("Kembali Menu Utama")
-                         Menu()
-                   elif pilih == 5 :
-                        Author()
-                        input("\n\n Kembali Ke Menu Utama")
-                         
-                                       
+def menu():
+    os.system('cls')
+    print("Menu Aplikasi Data Siswa")
+    print("----------------------------------------------")
+    print("1. Input Data Siswa")
+    print("2. Tampilkan Data Siswa")
+    print("3. Update Data Siswa")
+    print("4. Hapus Data Siswa")
+    print("5. Author")
+    print("6. Keluar Aplikasi")
+    pilih = int(input("Masukkan pilihan anda : "))
+    if pilih ==1 :
+        pilih1()
+        menu()
+    elif pilih == 2:
+        tampil()
+        input("Kembali menu utama")
+        menu()
+    elif pilih == 3:
+        index_update=-1
+        tampil()
+        id_edit = int(input("Input Nim yang akan di update "))
+        for a in range(0, len(dataSiswa)):
+            if id_edit == dataSiswa[a].nim
+                    index_update = a
+                    break
+        if(index_update > -1):
+            print("INPUT DATA YANG DI UPDATE ")
+            siswa = Mahasiswa()
+            siswa.nim = (int(input("masukkan nim : ")))
+            siswa. nama = (input("masukkan nama siswa :"))
+            dataSiswa[index_update] = siswa
+            print("berhasi
