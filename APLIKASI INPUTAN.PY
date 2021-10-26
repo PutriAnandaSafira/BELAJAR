@@ -46,7 +46,7 @@ def Menu () :
                 else : print("Nim Tidak Ditemukan")
                         input("Kembali Ke Menu Utama")
                         Menu()
-                 elif pilih == 4 :
+           elif pilih == 4 :
                         os.system('clear')
                         index_delete=-1
                         tampil()
@@ -64,5 +64,32 @@ def Menu () :
                    elif pilih == 5 :
                         Author()
                         input("\n\n Kembali Ke Menu Utama")
-                         
+                        Menu()
+                   elif pilih == 6 :
+                        sys.exit()
+def Author():    
+    os.system('cls');
+    print("Putri Ananda Safira")
+    print("UNHAR")
+    
+def tampil(): 
+    os.system('cls'); 
+    print("DATA MAHASISWA") 
+    for Data in dataSiswa: 
+        print("Nim : "+str(Data.nim)) 
+        print("Nama : "+ Data.nama) 
+        print("----------------------------") 
+         
+def pilih1(): 
+    ulang = 'Y' 
+    while ulang in("y", "Y"): 
+        os.system('cls'); 
+        siswaBaru = Mahasiswa() 
+        print("Input Data Mahasiswa ") 
+        siswaBaru.nim = (int(input("Masukkan Nim : "))) 
+        siswaBaru.nama = (input("Masukkan Nama Siswa : ")) 
+        dataSiswa.append(siswaBaru) 
+        ulang = input ("Apakah Anda Ingin Mengulang (Y/T)? ") 
+ 
+Menu();
                                        
